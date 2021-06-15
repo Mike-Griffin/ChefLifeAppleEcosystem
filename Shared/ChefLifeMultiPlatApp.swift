@@ -13,6 +13,7 @@ struct ChefLifeMultiPlatApp: App {
         WindowGroup {
             #if os(iOS)
             HomeView()
+                .onAppear { CloudKitManager.shared.getUserRecord() }
             #else
             HomeView()
                 .frame(minWidth: 1000, minHeight: 600)

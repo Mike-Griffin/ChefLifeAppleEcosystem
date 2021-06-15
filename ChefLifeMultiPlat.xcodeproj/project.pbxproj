@@ -7,15 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F5991C82678528A00EFC5EB /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F5991C72678528A00EFC5EB /* CloudKit.framework */; };
+		7F5991CA267852BB00EFC5EB /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F5991C9267852BB00EFC5EB /* CloudKit.framework */; };
+		7F5991CE2678582B00EFC5EB /* CloudKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5991CD2678582B00EFC5EB /* CloudKitManager.swift */; };
 		7FC299102676CA8C001C9BC2 /* ChefLifeMultiPlatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC298FD2676CA89001C9BC2 /* ChefLifeMultiPlatApp.swift */; };
 		7FC299112676CA8C001C9BC2 /* ChefLifeMultiPlatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC298FD2676CA89001C9BC2 /* ChefLifeMultiPlatApp.swift */; };
 		7FC299142676CA8C001C9BC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FC298FF2676CA8B001C9BC2 /* Assets.xcassets */; };
 		7FC299152676CA8C001C9BC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FC298FF2676CA8B001C9BC2 /* Assets.xcassets */; };
+		7FCB690326785B6F0025E919 /* CKRecord+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCB690226785B6F0025E919 /* CKRecord+Ext.swift */; };
+		7FCB690626785BE70025E919 /* BCLRecipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCB690526785BE70025E919 /* BCLRecipe.swift */; };
+		7FCB69082678614E0025E919 /* BCLTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCB69072678614E0025E919 /* BCLTag.swift */; };
+		7FCB690A267861C80025E919 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCB6909267861C80025E919 /* Constants.swift */; };
 		7FEDBD3226770CC200A1E187 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEDBD3126770CC200A1E187 /* HomeView.swift */; };
 		7FEDBD3326770CC200A1E187 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEDBD3126770CC200A1E187 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7F5991C52678528700EFC5EB /* ChefLifeMultiPlat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ChefLifeMultiPlat.entitlements; sourceTree = "<group>"; };
+		7F5991C72678528A00EFC5EB /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.5.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
+		7F5991C9267852BB00EFC5EB /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		7F5991CD2678582B00EFC5EB /* CloudKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitManager.swift; sourceTree = "<group>"; };
 		7FC298FD2676CA89001C9BC2 /* ChefLifeMultiPlatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChefLifeMultiPlatApp.swift; sourceTree = "<group>"; };
 		7FC298FF2676CA8B001C9BC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7FC299042676CA8C001C9BC2 /* ChefLifeMultiPlat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChefLifeMultiPlat.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -23,6 +34,10 @@
 		7FC2990C2676CA8C001C9BC2 /* ChefLifeMultiPlat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChefLifeMultiPlat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FC2990E2676CA8C001C9BC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7FC2990F2676CA8C001C9BC2 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		7FCB690226785B6F0025E919 /* CKRecord+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CKRecord+Ext.swift"; sourceTree = "<group>"; };
+		7FCB690526785BE70025E919 /* BCLRecipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BCLRecipe.swift; sourceTree = "<group>"; };
+		7FCB69072678614E0025E919 /* BCLTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BCLTag.swift; sourceTree = "<group>"; };
+		7FCB6909267861C80025E919 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		7FEDBD3126770CC200A1E187 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -31,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F5991C82678528A00EFC5EB /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,28 +54,60 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F5991CA267852BB00EFC5EB /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7F5991C62678528A00EFC5EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F5991C9267852BB00EFC5EB /* CloudKit.framework */,
+				7F5991C72678528A00EFC5EB /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7F5991CB2678580D00EFC5EB /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				7F5991CC2678581700EFC5EB /* Managers */,
+				7FCB690126785B570025E919 /* Extensions */,
+				7FCB6909267861C80025E919 /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		7F5991CC2678581700EFC5EB /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				7F5991CD2678582B00EFC5EB /* CloudKitManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		7FC298F72676CA88001C9BC2 = {
 			isa = PBXGroup;
 			children = (
+				7F5991C52678528700EFC5EB /* ChefLifeMultiPlat.entitlements */,
 				7FC298FC2676CA89001C9BC2 /* Shared */,
 				7FC299062676CA8C001C9BC2 /* iOS */,
 				7FC2990D2676CA8C001C9BC2 /* macOS */,
 				7FC299052676CA8C001C9BC2 /* Products */,
+				7F5991C62678528A00EFC5EB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		7FC298FC2676CA89001C9BC2 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				7FCB690426785BCB0025E919 /* Model */,
+				7F5991CB2678580D00EFC5EB /* Utilities */,
+				7FEDBD3426770CC600A1E187 /* Views */,
 				7FC298FD2676CA89001C9BC2 /* ChefLifeMultiPlatApp.swift */,
 				7FC298FF2676CA8B001C9BC2 /* Assets.xcassets */,
-				7FEDBD3426770CC600A1E187 /* Views */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -88,6 +136,23 @@
 				7FC2990F2676CA8C001C9BC2 /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		7FCB690126785B570025E919 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7FCB690226785B6F0025E919 /* CKRecord+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7FCB690426785BCB0025E919 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7FCB690526785BE70025E919 /* BCLRecipe.swift */,
+				7FCB69072678614E0025E919 /* BCLTag.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		7FEDBD3426770CC600A1E187 /* Views */ = {
@@ -204,7 +269,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				7FEDBD3226770CC200A1E187 /* HomeView.swift in Sources */,
+				7FCB69082678614E0025E919 /* BCLTag.swift in Sources */,
 				7FC299102676CA8C001C9BC2 /* ChefLifeMultiPlatApp.swift in Sources */,
+				7FCB690626785BE70025E919 /* BCLRecipe.swift in Sources */,
+				7FCB690A267861C80025E919 /* Constants.swift in Sources */,
+				7FCB690326785B6F0025E919 /* CKRecord+Ext.swift in Sources */,
+				7F5991CE2678582B00EFC5EB /* CloudKitManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,6 +406,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ChefLifeMultiPlat.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T24L76PMG9;
 				ENABLE_PREVIEWS = YES;
@@ -358,6 +429,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ChefLifeMultiPlat.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T24L76PMG9;
 				ENABLE_PREVIEWS = YES;
@@ -382,6 +454,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = T24L76PMG9;
@@ -406,6 +479,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = T24L76PMG9;
