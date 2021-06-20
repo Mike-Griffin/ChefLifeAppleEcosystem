@@ -1,0 +1,15 @@
+identifier_name:
+  excluded:
+    - id
+
+disabled_rules:
+  - todo
+  - force_try
+
+opt_in_rules:
+  - convenience_type
+  - empty_count
+  - empty_string
+  - first_where
+  - modifier_order
+  - toggle_bool

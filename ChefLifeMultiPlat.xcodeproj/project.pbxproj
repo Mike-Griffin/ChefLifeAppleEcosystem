@@ -7,6 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F176885267D05420014BA27 /* CreateRecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F176884267D05420014BA27 /* CreateRecipeView.swift */; };
+		7F176889267D0D030014BA27 /* SelectIngredientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F176888267D0D030014BA27 /* SelectIngredientView.swift */; };
+		7F17688C267D0DCE0014BA27 /* CreateIngredientLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F17688B267D0DCE0014BA27 /* CreateIngredientLineView.swift */; };
+		7F17688E267D0DF10014BA27 /* CreateIngredientLineViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F17688D267D0DF10014BA27 /* CreateIngredientLineViewModel.swift */; };
+		7F176892267D272D0014BA27 /* SelectableItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F176891267D272D0014BA27 /* SelectableItem.swift */; };
+		7F176895267D28BB0014BA27 /* SelectIngredientViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F176894267D28BB0014BA27 /* SelectIngredientViewModel.swift */; };
+		7F176897267D29200014BA27 /* BCLIngredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F176896267D29200014BA27 /* BCLIngredient.swift */; };
+		7F176899267D2C640014BA27 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F176898267D2C640014BA27 /* MockData.swift */; };
+		7F17689C267D2DAA0014BA27 /* SelectableItemList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F17689B267D2DAA0014BA27 /* SelectableItemList.swift */; };
+		7F17689E267D38250014BA27 /* SelectableItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F17689D267D38250014BA27 /* SelectableItemCell.swift */; };
+		7F1768A0267D64CF0014BA27 /* AlertItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F17689F267D64CF0014BA27 /* AlertItem.swift */; };
+		7F1768A2267D6E370014BA27 /* CreateRecipeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1768A1267D6E370014BA27 /* CreateRecipeViewModel.swift */; };
+		7F1768A5267D6F910014BA27 /* SelectMeasurementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1768A4267D6F910014BA27 /* SelectMeasurementView.swift */; };
+		7F1768A7267D704A0014BA27 /* CustomModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1768A6267D704A0014BA27 /* CustomModifiers.swift */; };
+		7F1768AB267D71150014BA27 /* SelectMeasurementViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1768AA267D71150014BA27 /* SelectMeasurementViewModel.swift */; };
+		7F1768AD267D71340014BA27 /* BCLMeasurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1768AC267D71340014BA27 /* BCLMeasurement.swift */; };
+		7F1768B1267D75BF0014BA27 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1768B0267D75BF0014BA27 /* LoadingView.swift */; };
+		7F1768B4267D77190014BA27 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1768B3267D77190014BA27 /* Color.swift */; };
+		7F1768B6267D788B0014BA27 /* View+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1768B5267D788B0014BA27 /* View+Ext.swift */; };
+		7F1768B8267D7E4B0014BA27 /* BCLIngredientLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1768B7267D7E4B0014BA27 /* BCLIngredientLine.swift */; };
+		7F1768BB267E57160014BA27 /* SelectTagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1768BA267E57160014BA27 /* SelectTagView.swift */; };
+		7F1768BD267E57A00014BA27 /* SelectTagViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1768BC267E57A00014BA27 /* SelectTagViewModel.swift */; };
+		7F1768BF267E5FF10014BA27 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1768BE267E5FF10014BA27 /* Error.swift */; };
+		7F1768C1267E60B20014BA27 /* Error+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1768C0267E60B20014BA27 /* Error+Ext.swift */; };
 		7F5991C82678528A00EFC5EB /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F5991C72678528A00EFC5EB /* CloudKit.framework */; };
 		7F5991CA267852BB00EFC5EB /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F5991C9267852BB00EFC5EB /* CloudKit.framework */; };
 		7F5991CE2678582B00EFC5EB /* CloudKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5991CD2678582B00EFC5EB /* CloudKitManager.swift */; };
@@ -23,6 +47,30 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7F176884267D05420014BA27 /* CreateRecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRecipeView.swift; sourceTree = "<group>"; };
+		7F176888267D0D030014BA27 /* SelectIngredientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectIngredientView.swift; sourceTree = "<group>"; };
+		7F17688B267D0DCE0014BA27 /* CreateIngredientLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateIngredientLineView.swift; sourceTree = "<group>"; };
+		7F17688D267D0DF10014BA27 /* CreateIngredientLineViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateIngredientLineViewModel.swift; sourceTree = "<group>"; };
+		7F176891267D272D0014BA27 /* SelectableItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectableItem.swift; sourceTree = "<group>"; };
+		7F176894267D28BB0014BA27 /* SelectIngredientViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectIngredientViewModel.swift; sourceTree = "<group>"; };
+		7F176896267D29200014BA27 /* BCLIngredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BCLIngredient.swift; sourceTree = "<group>"; };
+		7F176898267D2C640014BA27 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		7F17689B267D2DAA0014BA27 /* SelectableItemList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectableItemList.swift; sourceTree = "<group>"; };
+		7F17689D267D38250014BA27 /* SelectableItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectableItemCell.swift; sourceTree = "<group>"; };
+		7F17689F267D64CF0014BA27 /* AlertItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertItem.swift; sourceTree = "<group>"; };
+		7F1768A1267D6E370014BA27 /* CreateRecipeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRecipeViewModel.swift; sourceTree = "<group>"; };
+		7F1768A4267D6F910014BA27 /* SelectMeasurementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectMeasurementView.swift; sourceTree = "<group>"; };
+		7F1768A6267D704A0014BA27 /* CustomModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModifiers.swift; sourceTree = "<group>"; };
+		7F1768AA267D71150014BA27 /* SelectMeasurementViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectMeasurementViewModel.swift; sourceTree = "<group>"; };
+		7F1768AC267D71340014BA27 /* BCLMeasurement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BCLMeasurement.swift; sourceTree = "<group>"; };
+		7F1768B0267D75BF0014BA27 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		7F1768B3267D77190014BA27 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		7F1768B5267D788B0014BA27 /* View+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Ext.swift"; sourceTree = "<group>"; };
+		7F1768B7267D7E4B0014BA27 /* BCLIngredientLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BCLIngredientLine.swift; sourceTree = "<group>"; };
+		7F1768BA267E57160014BA27 /* SelectTagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTagView.swift; sourceTree = "<group>"; };
+		7F1768BC267E57A00014BA27 /* SelectTagViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTagViewModel.swift; sourceTree = "<group>"; };
+		7F1768BE267E5FF10014BA27 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		7F1768C0267E60B20014BA27 /* Error+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Error+Ext.swift"; sourceTree = "<group>"; };
 		7F5991C52678528700EFC5EB /* ChefLifeMultiPlat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ChefLifeMultiPlat.entitlements; sourceTree = "<group>"; };
 		7F5991C72678528A00EFC5EB /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.5.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
 		7F5991C9267852BB00EFC5EB /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
@@ -61,6 +109,98 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7F176886267D0BE50014BA27 /* CreateRecipe */ = {
+			isa = PBXGroup;
+			children = (
+				7F1768A1267D6E370014BA27 /* CreateRecipeViewModel.swift */,
+				7F176884267D05420014BA27 /* CreateRecipeView.swift */,
+			);
+			path = CreateRecipe;
+			sourceTree = "<group>";
+		};
+		7F176887267D0CEA0014BA27 /* SelectIngredient */ = {
+			isa = PBXGroup;
+			children = (
+				7F176894267D28BB0014BA27 /* SelectIngredientViewModel.swift */,
+				7F176888267D0D030014BA27 /* SelectIngredientView.swift */,
+			);
+			path = SelectIngredient;
+			sourceTree = "<group>";
+		};
+		7F17688A267D0DB70014BA27 /* CreateIngredientLine */ = {
+			isa = PBXGroup;
+			children = (
+				7F17688D267D0DF10014BA27 /* CreateIngredientLineViewModel.swift */,
+				7F17688B267D0DCE0014BA27 /* CreateIngredientLineView.swift */,
+			);
+			path = CreateIngredientLine;
+			sourceTree = "<group>";
+		};
+		7F17688F267D26F20014BA27 /* CloudKit */ = {
+			isa = PBXGroup;
+			children = (
+				7FCB690526785BE70025E919 /* BCLRecipe.swift */,
+				7FCB69072678614E0025E919 /* BCLTag.swift */,
+				7F1768B7267D7E4B0014BA27 /* BCLIngredientLine.swift */,
+				7F176896267D29200014BA27 /* BCLIngredient.swift */,
+				7F1768AC267D71340014BA27 /* BCLMeasurement.swift */,
+				7F176898267D2C640014BA27 /* MockData.swift */,
+			);
+			path = CloudKit;
+			sourceTree = "<group>";
+		};
+		7F176890267D27030014BA27 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				7F176891267D272D0014BA27 /* SelectableItem.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		7F17689A267D2D960014BA27 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				7F17689B267D2DAA0014BA27 /* SelectableItemList.swift */,
+				7F1768B0267D75BF0014BA27 /* LoadingView.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		7F1768A3267D6F780014BA27 /* SelectMeasurement */ = {
+			isa = PBXGroup;
+			children = (
+				7F1768AA267D71150014BA27 /* SelectMeasurementViewModel.swift */,
+				7F1768A4267D6F910014BA27 /* SelectMeasurementView.swift */,
+			);
+			path = SelectMeasurement;
+			sourceTree = "<group>";
+		};
+		7F1768A9267D70F30014BA27 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				7F17689D267D38250014BA27 /* SelectableItemCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		7F1768B2267D76690014BA27 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				7FC298FF2676CA8B001C9BC2 /* Assets.xcassets */,
+				7F1768B3267D77190014BA27 /* Color.swift */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		7F1768B9267E57030014BA27 /* SelectTag */ = {
+			isa = PBXGroup;
+			children = (
+				7F1768BC267E57A00014BA27 /* SelectTagViewModel.swift */,
+				7F1768BA267E57160014BA27 /* SelectTagView.swift */,
+			);
+			path = SelectTag;
+			sourceTree = "<group>";
+		};
 		7F5991C62678528A00EFC5EB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +216,8 @@
 				7F5991CC2678581700EFC5EB /* Managers */,
 				7FCB690126785B570025E919 /* Extensions */,
 				7FCB6909267861C80025E919 /* Constants.swift */,
+				7F17689F267D64CF0014BA27 /* AlertItem.swift */,
+				7F1768BE267E5FF10014BA27 /* Error.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -107,7 +249,7 @@
 				7F5991CB2678580D00EFC5EB /* Utilities */,
 				7FEDBD3426770CC600A1E187 /* Views */,
 				7FC298FD2676CA89001C9BC2 /* ChefLifeMultiPlatApp.swift */,
-				7FC298FF2676CA8B001C9BC2 /* Assets.xcassets */,
+				7F1768B2267D76690014BA27 /* Assets */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -142,6 +284,8 @@
 			isa = PBXGroup;
 			children = (
 				7FCB690226785B6F0025E919 /* CKRecord+Ext.swift */,
+				7F1768B5267D788B0014BA27 /* View+Ext.swift */,
+				7F1768C0267E60B20014BA27 /* Error+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -149,8 +293,8 @@
 		7FCB690426785BCB0025E919 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				7FCB690526785BE70025E919 /* BCLRecipe.swift */,
-				7FCB69072678614E0025E919 /* BCLTag.swift */,
+				7F17688F267D26F20014BA27 /* CloudKit */,
+				7F176890267D27030014BA27 /* Helpers */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -158,6 +302,9 @@
 		7FEDBD3426770CC600A1E187 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				7F1768A6267D704A0014BA27 /* CustomModifiers.swift */,
+				7F17689A267D2D960014BA27 /* CustomViews */,
+				7F1768A9267D70F30014BA27 /* Cells */,
 				7FEDBD3526770CD000A1E187 /* Screens */,
 			);
 			path = Views;
@@ -166,6 +313,11 @@
 		7FEDBD3526770CD000A1E187 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				7F176886267D0BE50014BA27 /* CreateRecipe */,
+				7F17688A267D0DB70014BA27 /* CreateIngredientLine */,
+				7F1768A3267D6F780014BA27 /* SelectMeasurement */,
+				7F176887267D0CEA0014BA27 /* SelectIngredient */,
+				7F1768B9267E57030014BA27 /* SelectTag */,
 				7FEDBD3126770CC200A1E187 /* HomeView.swift */,
 			);
 			path = Screens;
@@ -181,6 +333,7 @@
 				7FC299002676CA8C001C9BC2 /* Sources */,
 				7FC299012676CA8C001C9BC2 /* Frameworks */,
 				7FC299022676CA8C001C9BC2 /* Resources */,
+				7F176893267D27770014BA27 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -263,18 +416,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7F176893267D27770014BA27 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7FC299002676CA8C001C9BC2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F176889267D0D030014BA27 /* SelectIngredientView.swift in Sources */,
+				7F176885267D05420014BA27 /* CreateRecipeView.swift in Sources */,
+				7F1768A2267D6E370014BA27 /* CreateRecipeViewModel.swift in Sources */,
+				7F1768A5267D6F910014BA27 /* SelectMeasurementView.swift in Sources */,
+				7F17689E267D38250014BA27 /* SelectableItemCell.swift in Sources */,
+				7F1768B1267D75BF0014BA27 /* LoadingView.swift in Sources */,
+				7F17689C267D2DAA0014BA27 /* SelectableItemList.swift in Sources */,
+				7F176892267D272D0014BA27 /* SelectableItem.swift in Sources */,
 				7FEDBD3226770CC200A1E187 /* HomeView.swift in Sources */,
+				7F1768AD267D71340014BA27 /* BCLMeasurement.swift in Sources */,
+				7F176899267D2C640014BA27 /* MockData.swift in Sources */,
+				7F1768A0267D64CF0014BA27 /* AlertItem.swift in Sources */,
 				7FCB69082678614E0025E919 /* BCLTag.swift in Sources */,
 				7FC299102676CA8C001C9BC2 /* ChefLifeMultiPlatApp.swift in Sources */,
+				7F1768AB267D71150014BA27 /* SelectMeasurementViewModel.swift in Sources */,
+				7F1768A7267D704A0014BA27 /* CustomModifiers.swift in Sources */,
+				7F1768BD267E57A00014BA27 /* SelectTagViewModel.swift in Sources */,
+				7F176897267D29200014BA27 /* BCLIngredient.swift in Sources */,
 				7FCB690626785BE70025E919 /* BCLRecipe.swift in Sources */,
+				7F1768B4267D77190014BA27 /* Color.swift in Sources */,
+				7F1768C1267E60B20014BA27 /* Error+Ext.swift in Sources */,
+				7F176895267D28BB0014BA27 /* SelectIngredientViewModel.swift in Sources */,
+				7F17688E267D0DF10014BA27 /* CreateIngredientLineViewModel.swift in Sources */,
+				7F1768BB267E57160014BA27 /* SelectTagView.swift in Sources */,
 				7FCB690A267861C80025E919 /* Constants.swift in Sources */,
+				7F17688C267D0DCE0014BA27 /* CreateIngredientLineView.swift in Sources */,
 				7FCB690326785B6F0025E919 /* CKRecord+Ext.swift in Sources */,
+				7F1768B6267D788B0014BA27 /* View+Ext.swift in Sources */,
 				7F5991CE2678582B00EFC5EB /* CloudKitManager.swift in Sources */,
+				7F1768BF267E5FF10014BA27 /* Error.swift in Sources */,
+				7F1768B8267D7E4B0014BA27 /* BCLIngredientLine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

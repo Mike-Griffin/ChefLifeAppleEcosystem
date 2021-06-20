@@ -10,7 +10,11 @@ import SwiftUI
 struct HomeView: View {
     var body: some View {
         if #available(iOS 15.0, *) {
-            Text("Welcome Home there ")
+            NavigationView {
+                NavigationLink(destination: CreateRecipeView()) {
+                    Text("Create Recipe")
+                }
+            }
                 .task {
                     async {
                         let recipes = try await CloudKitManager.shared.fetchRecipes()

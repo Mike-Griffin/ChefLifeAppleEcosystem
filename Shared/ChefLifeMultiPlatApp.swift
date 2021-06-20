@@ -18,7 +18,6 @@ struct ChefLifeMultiPlatApp: App {
             HomeView()
                 .frame(minWidth: 1000, minHeight: 600)
             #endif
-            
         }
     }
 }
