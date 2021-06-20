@@ -32,4 +32,7 @@ class CreateRecipeViewModel: ObservableObject {
         recipeRecord[BCLRecipe.kTags] = tags.map({ $0.convertToCKReference() })
         return recipeRecord
     }
+    func populateRecipeData(recipe: BCLRecipe){
+        name = recipe.name
+    }
 }

@@ -9,52 +9,59 @@ import SwiftUI
 
 struct CreateRecipeView: View {
     @ObservedObject var viewModel = CreateRecipeViewModel()
+    var recipe: BCLRecipe?
     var body: some View {
-        List {
-            TextField("Name", text: $viewModel.name)
-            Section(header: HStack {
-                Text("Tags")
-                Spacer()
-                NavigationLink(destination: SelectTagView(selectedTags: $viewModel.tags)) {
-                    Text("Select Tags")
+        VStack {
+            List {
+                TextField("Name", text: $viewModel.name)
+                Section(header: HStack {
+                    Text("Tags")
+                    Spacer()
+                    NavigationLink(destination: SelectTagView(selectedTags: $viewModel.tags)) {
+                        Text("Select Tags")
+                    }
+                }) {
+                    // To do change this to not be just a for each
+                    ForEach(viewModel.tags) { tag in
+                        Text(tag.name)
+                    }
                 }
-            }) {
-                // To do change this to not be just a for each
-                ForEach(viewModel.tags) { tag in
-                    Text(tag.name)
+                Section(header: HStack {
+                    Text("Ingredient Lines")
+                    Spacer()
+                    NavigationLink(destination: CreateIngredientLineView(recipeName: viewModel.name,
+                                                                         ingredientLines: $viewModel.ingredientLines)) {
+                        Text("Update Ingredients")
+                    }
+                }) {
+                    ForEach(viewModel.ingredientLines) { ingredient in
+                        Text(ingredient.displayName)
+                    }
                 }
             }
-            Section(header: HStack {
-                Text("Ingredient Lines")
-                Spacer()
-                NavigationLink(destination: CreateIngredientLineView(recipeName: viewModel.name,
-                                                                     ingredientLines: $viewModel.ingredientLines)) {
-                    Text("Update Ingredients")
+            Button {
+                if #available(iOS 15.0, *) {
+                    async {
+                        let recipe = try await viewModel.createRecipe()
+                        print(recipe)
+                    }
+                } else {
+                    print("have not implemented pre 15.0")
                 }
-            }) {
-                ForEach(viewModel.ingredientLines) { ingredient in
-                    Text(ingredient.displayName)
-                }
+            } label: {
+                Text("Save Recipe")
             }
         }
-        Button {
-            if #available(iOS 15.0, *) {
-                async {
-                    let recipe = try await viewModel.createRecipe()
-                    print(recipe)
-                }
-            } else {
-                print("have not implemented pre 15.0")
+        .onAppear {
+            if let recipe = recipe {
+                viewModel.populateRecipeData(recipe: recipe)
             }
-        } label: {
-            Text("Save Recipe")
         }
-
     }
 }
 
 struct CreateRecipeView_Previews: PreviewProvider {
     static var previews: some View {
-        CreateRecipeView()
+        CreateRecipeView(recipe: nil)
     }
 }

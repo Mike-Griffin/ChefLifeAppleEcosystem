@@ -31,6 +31,7 @@
 		7F1768BD267E57A00014BA27 /* SelectTagViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1768BC267E57A00014BA27 /* SelectTagViewModel.swift */; };
 		7F1768BF267E5FF10014BA27 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1768BE267E5FF10014BA27 /* Error.swift */; };
 		7F1768C1267E60B20014BA27 /* Error+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1768C0267E60B20014BA27 /* Error+Ext.swift */; };
+		7F1768C4267F9FF70014BA27 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1768C3267F9FF70014BA27 /* HomeViewModel.swift */; };
 		7F5991C82678528A00EFC5EB /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F5991C72678528A00EFC5EB /* CloudKit.framework */; };
 		7F5991CA267852BB00EFC5EB /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F5991C9267852BB00EFC5EB /* CloudKit.framework */; };
 		7F5991CE2678582B00EFC5EB /* CloudKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5991CD2678582B00EFC5EB /* CloudKitManager.swift */; };
@@ -71,6 +72,7 @@
 		7F1768BC267E57A00014BA27 /* SelectTagViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTagViewModel.swift; sourceTree = "<group>"; };
 		7F1768BE267E5FF10014BA27 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		7F1768C0267E60B20014BA27 /* Error+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Error+Ext.swift"; sourceTree = "<group>"; };
+		7F1768C3267F9FF70014BA27 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		7F5991C52678528700EFC5EB /* ChefLifeMultiPlat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ChefLifeMultiPlat.entitlements; sourceTree = "<group>"; };
 		7F5991C72678528A00EFC5EB /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.5.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
 		7F5991C9267852BB00EFC5EB /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
@@ -201,6 +203,15 @@
 			path = SelectTag;
 			sourceTree = "<group>";
 		};
+		7F1768C2267F9FE40014BA27 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				7F1768C3267F9FF70014BA27 /* HomeViewModel.swift */,
+				7FEDBD3126770CC200A1E187 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		7F5991C62678528A00EFC5EB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -313,12 +324,12 @@
 		7FEDBD3526770CD000A1E187 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				7F1768C2267F9FE40014BA27 /* Home */,
 				7F176886267D0BE50014BA27 /* CreateRecipe */,
 				7F17688A267D0DB70014BA27 /* CreateIngredientLine */,
 				7F1768A3267D6F780014BA27 /* SelectMeasurement */,
 				7F176887267D0CEA0014BA27 /* SelectIngredient */,
 				7F1768B9267E57030014BA27 /* SelectTag */,
-				7FEDBD3126770CC200A1E187 /* HomeView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -444,6 +455,7 @@
 				7F176889267D0D030014BA27 /* SelectIngredientView.swift in Sources */,
 				7F176885267D05420014BA27 /* CreateRecipeView.swift in Sources */,
 				7F1768A2267D6E370014BA27 /* CreateRecipeViewModel.swift in Sources */,
+				7F1768C4267F9FF70014BA27 /* HomeViewModel.swift in Sources */,
 				7F1768A5267D6F910014BA27 /* SelectMeasurementView.swift in Sources */,
 				7F17689E267D38250014BA27 /* SelectableItemCell.swift in Sources */,
 				7F1768B1267D75BF0014BA27 /* LoadingView.swift in Sources */,

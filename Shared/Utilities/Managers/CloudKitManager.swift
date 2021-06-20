@@ -31,8 +31,7 @@ final class CloudKitManager {
     func fetchRecipes() async throws -> [BCLRecipe] {
         let query = CKQuery(recordType: RecordType.recipe, predicate: NSPredicate(value: true))
         let records = try await CKContainer.default().publicCloudDatabase.perform(query, inZoneWith: nil)
-        let recipes = records.map({ $0.convertToCLRecipe() })
-        return recipes
+        return records.map({ $0.convertToCLRecipe() })
     }
     func fetchTag(with id: CKRecord.ID) async throws -> BCLTag {
         let record = try await CKContainer.default().publicCloudDatabase.record(for: id)
