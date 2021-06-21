@@ -42,6 +42,40 @@ final class CloudKitManager {
         let records = try await CKContainer.default().publicCloudDatabase.perform(query, inZoneWith: nil)
         return records.map({ $0.convertToCLTag() })
     }
+    func batchFetchTags(with ids: [CKRecord.ID]) async throws -> [BCLTag] {
+        var tags: [BCLTag] = []
+        if #available(iOS 15.0, *) {
+            let records = try await CKContainer.default().publicCloudDatabase.records(for: ids, desiredKeys: nil)
+            for record in records {
+                switch record.value {
+                case .success(let tagRecord):
+                    tags.append(tagRecord.convertToCLTag())
+                case .failure(_):
+                    print("Error fetching a tag in batch fetch")
+                }
+            }
+        } else {
+            print("Batch fetch tags has not converted")
+        }
+        return tags
+    }
+    func batchFetchIngredientLines(with ids: [CKRecord.ID]) async throws -> [BCLIngredientLine] {
+        var ingredientLines: [BCLIngredientLine] = []
+        if #available(iOS 15.0, *) {
+            let records = try await CKContainer.default().publicCloudDatabase.records(for: ids, desiredKeys: nil)
+            for record in records {
+                switch record.value {
+                case .success(let ingredientLineRecord):
+                    ingredientLines.append(ingredientLineRecord.convertToCLIngredientLine())
+                case .failure(_):
+                    print("Error fetching an ingredient line in batch fetch")
+                }
+            }
+        } else {
+            print("Batch fetch ingredient lines has not converted")
+        }
+        return ingredientLines
+    }
     func fetchMeasurements() async throws -> [BCLMeasurement] {
         let query = CKQuery(recordType: RecordType.measurement, predicate: NSPredicate(value: true))
         let records = try await CKContainer.default().publicCloudDatabase.perform(query, inZoneWith: nil)
@@ -57,15 +91,7 @@ final class CloudKitManager {
         let record = try await CKContainer.default().publicCloudDatabase.save(record)
         return record
     }
-    // This needs some work to understand
-//    func batchFetchTags(with ids: [CKRecord.ID]) async throws -> [BCLTag] {
-//        if #available(iOS 15.0, *) {
-//            let records = try await CKContainer.default().publicCloudDatabase.records(for: ids)
-//            let tags =  records.map({ $0.convertToCLTag() })
-//            return tags
-//        } else {
-//            print("sorry can't do this one")
-//            return []
-//        }
-//    }
+    func fetchRecord(id: CKRecord.ID) async throws -> CKRecord {
+        return try await CKContainer.default().publicCloudDatabase.record(for: id)
+    }
 }

@@ -11,51 +11,75 @@ struct CreateRecipeView: View {
     @ObservedObject var viewModel = CreateRecipeViewModel()
     var recipe: BCLRecipe?
     var body: some View {
-        VStack {
-            List {
-                TextField("Name", text: $viewModel.name)
-                Section(header: HStack {
-                    Text("Tags")
-                    Spacer()
-                    NavigationLink(destination: SelectTagView(selectedTags: $viewModel.tags)) {
-                        Text("Select Tags")
+        if #available(iOS 15.0, *) {
+            VStack {
+                List {
+                    TextField("Name", text: $viewModel.name)
+                    Section(header: HStack {
+                        Text("Tags")
+                        Spacer()
+                        NavigationLink(destination: SelectTagView(selectedTags: $viewModel.tags)) {
+                            Text("Select Tags")
+                        }
+                    }) {
+                        // To do change this to not be just a for each
+                        ForEach(viewModel.tags) { tag in
+                            Text(tag.name)
+                        }
                     }
-                }) {
-                    // To do change this to not be just a for each
-                    ForEach(viewModel.tags) { tag in
-                        Text(tag.name)
+                    Section(header: HStack {
+                        Text("Ingredient Lines")
+                        Spacer()
+                        NavigationLink(destination: CreateIngredientLineView(recipeName: viewModel.name,
+                                                                             ingredientLines:
+                                                                                $viewModel.ingredientLines)) {
+                            Text("Update Ingredients")
+                        }
+                    }) {
+                        ForEach(viewModel.ingredientLines) { ingredient in
+                            Text(ingredient.displayName)
+                        }
                     }
                 }
-                Section(header: HStack {
-                    Text("Ingredient Lines")
-                    Spacer()
-                    NavigationLink(destination: CreateIngredientLineView(recipeName: viewModel.name,
-                                                                         ingredientLines: $viewModel.ingredientLines)) {
-                        Text("Update Ingredients")
-                    }
-                }) {
-                    ForEach(viewModel.ingredientLines) { ingredient in
-                        Text(ingredient.displayName)
-                    }
-                }
-            }
-            Button {
-                if #available(iOS 15.0, *) {
+                Button {
                     async {
-                        let recipe = try await viewModel.createRecipe()
-                        print(recipe)
+                        if viewModel.existingRecipe != nil {
+                            do {
+                                let recipe = try await viewModel.updateRecipe()
+                                print(recipe)
+                                
+                            } catch {
+                                viewModel.handleError(error)
+                            }
+                        } else {
+                            do {
+                                let recipe = try await viewModel.createRecipe()
+                                print(recipe)
+                            } catch {
+                                viewModel.handleError(error)
+                            }
+                        }
                     }
-                } else {
-                    print("have not implemented pre 15.0")
+                } label: {
+                    if viewModel.existingRecipe != nil {
+                        Text("Update Recipe")
+                    } else {
+                        Text("Create Recipe")
+                    }
                 }
-            } label: {
-                Text("Save Recipe")
             }
-        }
-        .onAppear {
-            if let recipe = recipe {
-                viewModel.populateRecipeData(recipe: recipe)
+            .task {
+                async {
+                    if let recipe = recipe, viewModel.existingRecipe == nil {
+                        try await viewModel.populateRecipeData(recipe: recipe)
+                    }
+                }
             }
+            .alert(item: $viewModel.alertItem, content: { alertItem in
+                Alert(title: alertItem.title, message: alertItem.message, dismissButton: alertItem.dismissButton)
+            })
+        } else {
+            Text("View not supported in this version")
         }
     }
 }

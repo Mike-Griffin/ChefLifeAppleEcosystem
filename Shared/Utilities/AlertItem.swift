@@ -22,6 +22,9 @@ enum AlertContext {
     static let missingRecipeIngredients = AlertItem(title: Text("Recipe Creation Error"),
                                                  message: Text("Please enter some ingredients for this recipe."),
                                                  dismissButton: .default(Text("Ok")))
+    static let noRecipeForUpdate = AlertItem(title: Text("Updated Recipe Missing"),
+                                             message: Text("Please select an existing recipe to update"),
+                                             dismissButton: .default(Text("Ok")))
     // MARK: Tag Errors
     static let missingTagName = AlertItem(title: Text("Tag Creation Error"),
                                                  message: Text("Please enter a tag name."),

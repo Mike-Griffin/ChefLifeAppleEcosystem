@@ -10,13 +10,13 @@ import Foundation
 enum ErrorContext: Error {
     case missingRecipeName
     case missingRecipeIngredients
+    case noRecipeForUpdate
     case missingTagName
     case missingIngredientName
     case missingMeasurementName
     case noUserRecord
-    
     func mapToAlert() -> AlertItem {
-        switch(self) {
+        switch self {
         case .noUserRecord:
             return AlertContext.noUserRecord
         case .missingRecipeName:
@@ -29,6 +29,8 @@ enum ErrorContext: Error {
             return AlertContext.missingIngredientName
         case .missingRecipeIngredients:
             return AlertContext.missingRecipeIngredients
+        case .noRecipeForUpdate:
+            return AlertContext.noRecipeForUpdate
         }
     }
 }
